@@ -270,12 +270,12 @@ fstream.close();</stringProp>
           <stringProp name="variableNames"></stringProp>
         </CSVDataSet>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${__threadGroupName} 1 Fist login" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Login" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="1 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="1" enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -291,12 +291,12 @@ ${password}</stringProp>
           </kg.apc.jmeter.samplers.DummySampler>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Dashboard" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="2 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="2" enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -311,7 +311,7 @@ ${password}</stringProp>
             <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
           </kg.apc.jmeter.samplers.DummySampler>
           <hashTree/>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="3 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="3 " enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -326,7 +326,7 @@ ${password}</stringProp>
             <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
           </kg.apc.jmeter.samplers.DummySampler>
           <hashTree/>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="4 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="4" enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -341,7 +341,7 @@ ${password}</stringProp>
             <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
           </kg.apc.jmeter.samplers.DummySampler>
           <hashTree/>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="5 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="5" enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -356,7 +356,7 @@ ${password}</stringProp>
             <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
           </kg.apc.jmeter.samplers.DummySampler>
           <hashTree/>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="6 - ${__threadGroupName}" enabled="true">
+          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="6" enabled="true">
             <boolProp name="WAITING">true</boolProp>
             <boolProp name="SUCCESFULL">true</boolProp>
             <stringProp name="RESPONSE_CODE">200</stringProp>
@@ -399,25 +399,18 @@ ${password}</stringProp>
           <stringProp name="variableNames"></stringProp>
         </CSVDataSet>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${__threadGroupName} 1 Fist login" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Customer" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
         </TransactionController>
         <hashTree>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="1 - ${__threadGroupName}" enabled="true">
-            <boolProp name="WAITING">true</boolProp>
-            <boolProp name="SUCCESFULL">true</boolProp>
-            <stringProp name="RESPONSE_CODE">200</stringProp>
-            <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
-            <stringProp name="REQUEST_DATA">${username}
-${password}</stringProp>
-            <stringProp name="RESPONSE_DATA">${Name}</stringProp>
-            <stringProp name="RESPONSE_TIME">${__Random(30,1000)}</stringProp>
-            <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
-            <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
-            <stringProp name="URL">/${username}</stringProp>
-            <stringProp name="RESULT_CLASS">org.apache.jmeter.protocol.http.sampler.HTTPSampleResult</stringProp>
-          </kg.apc.jmeter.samplers.DummySampler>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+            <stringProp name="BeanShellSampler.query">SampleResult.setSampleLabel(&quot;${Name}&quot;);
+</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
           <hashTree/>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller" enabled="false">
