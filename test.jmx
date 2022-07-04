@@ -144,7 +144,7 @@
         <stringProp name="connectionAge">5000</stringProp>
         <stringProp name="connectionProperties">ifexists=false</stringProp>
         <stringProp name="dataSource">dbConfig</stringProp>
-        <stringProp name="dbUrl">jdbc:mysql://host.docker.internal:3306/tcb</stringProp>
+        <stringProp name="dbUrl">jdbc:mysql://mysql:3306/tcb</stringProp>
         <stringProp name="driver">com.mysql.jdbc.Driver</stringProp>
         <stringProp name="initQuery"></stringProp>
         <boolProp name="keepAlive">true</boolProp>
